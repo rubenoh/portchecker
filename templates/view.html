@@ -1,0 +1,9 @@
+<!doctype html>
+<title>Connection Checker</title>
+<div class=page>
+  <h1>Connection Checker</h1>
+  {% for table in tables %}
+    <h2>Sender ip: {{titles[loop.index]}}</h2>
+    {{ table|safe }}
+  {% endfor %}
+</div>
